@@ -1,0 +1,6 @@
+.venv/
+
+# Raw data (too large for GitHub)
+data/raw/*.zip
+data/raw/*.csv
+.venv/
