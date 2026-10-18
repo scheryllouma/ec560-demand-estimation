@@ -1,0 +1,10 @@
+step,rows,passengers
+0. Raw data,28535894,59330295.0
+1. Drop missing key fields,28535894,59330295.0
+2. Continental US only,26755810,55749045.0
+3. Drop bulk fares,26751449,55742992.0
+4. Fare between $25 and $2000,25198515,50038368.0
+5. At most 2 connections,25160167,49999708.0
+6. Drop interline (carrier = 99),24760899,49578523.0
+7. Products before small-cell filter,222848,49578513.0
+8. Products with >= 20 sampled pax,106280,48822127.0

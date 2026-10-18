@@ -1,0 +1,20 @@
+
+File q1: 89.2 MB
+  contains: ['Origin_and_Destination_Survey_DB1BMarket_2019_1.csv', 'readme.html']
+  n columns: 42 | has state cols: True
+  year/quarter: {'Year': 2019, 'Quarter': 1}
+
+File q2: 102.4 MB
+  contains: ['Origin_and_Destination_Survey_DB1BMarket_2019_2.csv', 'readme.html']
+  n columns: 42 | has state cols: True
+  year/quarter: {'Year': 2019, 'Quarter': 2}
+
+File q3: 98.6 MB
+  contains: ['Origin_and_Destination_Survey_DB1BMarket_2019_3.csv', 'readme.html']
+  n columns: 42 | has state cols: True
+  year/quarter: {'Year': 2019, 'Quarter': 3}
+
+File q4: 100.0 MB
+  contains: ['Origin_and_Destination_Survey_DB1BMarket_2019_4.csv', 'readme.html']
+  n columns: 42 | has state cols: True
+  year/quarter: {'Year': 2019, 'Quarter': 4}

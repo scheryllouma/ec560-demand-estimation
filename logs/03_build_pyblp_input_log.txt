@@ -1,0 +1,29 @@
+Sensitivity of inside share to the market-size multiplier:
+    multiplier  mean_inside_share  median_inside_share  max_inside_share
+0        1.25           0.653638             0.697826              0.80
+1        2.00           0.408524             0.436141              0.50
+2        4.00           0.204262             0.218071              0.25
+
+Duplicate (market, product) pairs: 0
+Inside share by market:
+ count    45705.000000
+mean         0.408524
+std          0.098431
+min          0.004126
+25%          0.348375
+50%          0.436141
+75%          0.500000
+max          0.500000
+Name: shares, dtype: float64
+
+Summary statistics:
+              count         mean  ...          75%           max
+prices    106280.0   265.747730  ...   312.224964  8.375959e+02
+shares    106280.0     0.175683  ...     0.264706  5.000000e-01
+quantity  106280.0  4593.726665  ...  2240.000000  1.350370e+06
+distance  106280.0  1275.129572  ...  1675.000000  3.792250e+03
+nonstop   106280.0     0.153472  ...     0.000000  1.000000e+00
+
+[5 rows x 8 columns]
+
+Saved data/clean/pyblp_input_2019.csv: 106280 products, 45705 markets

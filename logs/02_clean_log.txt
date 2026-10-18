@@ -1,26 +1,40 @@
-Files found: ['data/raw\\db1b_market_2019_q1.zip']
-Columns loaded: []
-Traceback (most recent call last):
-  File "C:\Users\ebene\projects\ec560-demand-estimation\.venv\Lib\site-packages\pandas\core\indexes\base.py", line 3641, in get_loc
-    return self._engine.get_loc(casted_key)
-           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
-  File "pandas/_libs/index.pyx", line 168, in pandas._libs.index.IndexEngine.get_loc
-  File "pandas/_libs/index.pyx", line 197, in pandas._libs.index.IndexEngine.get_loc
-  File "pandas/_libs/hashtable_class_helper.pxi", line 7668, in pandas._libs.hashtable.PyObjectHashTable.get_item
-  File "pandas/_libs/hashtable_class_helper.pxi", line 7676, in pandas._libs.hashtable.PyObjectHashTable.get_item
-KeyError: 'Passengers'
+Files found: ['data/raw\\db1b_market_2019_q1.zip', 'data/raw\\db1b_market_2019_q2.zip', 'data/raw\\db1b_market_2019_q3.zip', 'data/raw\\db1b_market_2019_q4.zip']
+File columns: ['ItinID', 'MktID', 'MktCoupons', 'Year', 'Quarter', 'OriginAirportID', 'OriginAirportSeqID', 'OriginCityMarketID', 'Origin', 'OriginCountry', 'OriginStateFips', 'OriginState', 'OriginStateName', 'OriginWac', 'DestAirportID', 'DestAirportSeqID', 'DestCityMarketID', 'Dest', 'DestCountry', 'DestStateFips', 'DestState', 'DestStateName', 'DestWac', 'AirportGroup', 'WacGroup', 'TkCarrierChange', 'TkCarrierGroup', 'OpCarrierChange', 'OpCarrierGroup', 'RPCarrier', 'TkCarrier', 'OpCarrier', 'BulkFare', 'Passengers', 'MktFare', 'MktDistance', 'MktDistanceGroup', 'MktMilesFlown', 'NonStopMiles', 'ItinGeoType', 'MktGeoType', 'Unnamed: 41']
+File columns: ['ItinID', 'MktID', 'MktCoupons', 'Year', 'Quarter', 'OriginAirportID', 'OriginAirportSeqID', 'OriginCityMarketID', 'Origin', 'OriginCountry', 'OriginStateFips', 'OriginState', 'OriginStateName', 'OriginWac', 'DestAirportID', 'DestAirportSeqID', 'DestCityMarketID', 'Dest', 'DestCountry', 'DestStateFips', 'DestState', 'DestStateName', 'DestWac', 'AirportGroup', 'WacGroup', 'TkCarrierChange', 'TkCarrierGroup', 'OpCarrierChange', 'OpCarrierGroup', 'RPCarrier', 'TkCarrier', 'OpCarrier', 'BulkFare', 'Passengers', 'MktFare', 'MktDistance', 'MktDistanceGroup', 'MktMilesFlown', 'NonStopMiles', 'ItinGeoType', 'MktGeoType', 'Unnamed: 41']
+File columns: ['ItinID', 'MktID', 'MktCoupons', 'Year', 'Quarter', 'OriginAirportID', 'OriginAirportSeqID', 'OriginCityMarketID', 'Origin', 'OriginCountry', 'OriginStateFips', 'OriginState', 'OriginStateName', 'OriginWac', 'DestAirportID', 'DestAirportSeqID', 'DestCityMarketID', 'Dest', 'DestCountry', 'DestStateFips', 'DestState', 'DestStateName', 'DestWac', 'AirportGroup', 'WacGroup', 'TkCarrierChange', 'TkCarrierGroup', 'OpCarrierChange', 'OpCarrierGroup', 'RPCarrier', 'TkCarrier', 'OpCarrier', 'BulkFare', 'Passengers', 'MktFare', 'MktDistance', 'MktDistanceGroup', 'MktMilesFlown', 'NonStopMiles', 'ItinGeoType', 'MktGeoType', 'Unnamed: 41']
+File columns: ['ItinID', 'MktID', 'MktCoupons', 'Year', 'Quarter', 'OriginAirportID', 'OriginAirportSeqID', 'OriginCityMarketID', 'Origin', 'OriginCountry', 'OriginStateFips', 'OriginState', 'OriginStateName', 'OriginWac', 'DestAirportID', 'DestAirportSeqID', 'DestCityMarketID', 'Dest', 'DestCountry', 'DestStateFips', 'DestState', 'DestStateName', 'DestWac', 'AirportGroup', 'WacGroup', 'TkCarrierChange', 'TkCarrierGroup', 'OpCarrierChange', 'OpCarrierGroup', 'RPCarrier', 'TkCarrier', 'OpCarrier', 'BulkFare', 'Passengers', 'MktFare', 'MktDistance', 'MktDistanceGroup', 'MktMilesFlown', 'NonStopMiles', 'ItinGeoType', 'MktGeoType', 'Unnamed: 41']
+Columns used: ['MktCoupons', 'Year', 'Quarter', 'OriginCityMarketID', 'OriginState', 'DestCityMarketID', 'DestState', 'TkCarrier', 'BulkFare', 'Passengers', 'MktFare', 'MktDistance', 'NonStopMiles']
+0. Raw data                                   rows=  28,535,894  pax=    59,330,295
+1. Drop missing key fields                    rows=  28,535,894  pax=    59,330,295
+2. Continental US only                        rows=  26,755,810  pax=    55,749,045
+3. Drop bulk fares                            rows=  26,751,449  pax=    55,742,992
+4. Fare between $25 and $2000                 rows=  25,198,515  pax=    50,038,368
+5. At most 2 connections                      rows=  25,160,167  pax=    49,999,708
+6. Drop interline (carrier = 99)              rows=  24,760,899  pax=    49,578,523
+7. Products before small-cell filter          rows=     222,848  pax=    49,578,513
+8. Products with >= 20 sampled pax            rows=     106,280  pax=    48,822,127
 
-The above exception was the direct cause of the following exception:
+Products: 106,280 | Markets: 45,705
+Products per market:
+ count    45705.000000
+mean         2.325347
+std          1.896927
+min          1.000000
+25%          1.000000
+50%          2.000000
+75%          3.000000
+max         16.000000
+dtype: float64
 
-Traceback (most recent call last):
-  File "C:\Users\ebene\projects\ec560-demand-estimation\code\02_clean.py", line 33, in <module>
-    record("0. Raw data", df)
-    ~~~~~~^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\ebene\projects\ec560-demand-estimation\code\02_clean.py", line 30, in record
-    log.append({"step": step, "rows": len(d), "passengers": d["Passengers"].sum()})
-                                                            ~^^^^^^^^^^^^^^
-  File "C:\Users\ebene\projects\ec560-demand-estimation\.venv\Lib\site-packages\pandas\core\frame.py", line 4378, in __getitem__
-    indexer = self.columns.get_loc(key)
-  File "C:\Users\ebene\projects\ec560-demand-estimation\.venv\Lib\site-packages\pandas\core\indexes\base.py", line 3648, in get_loc
-    raise KeyError(key) from err
-KeyError: 'Passengers'
+Price summary:
+ count    106280.000000
+mean        265.747730
+std          75.830470
+min          29.583333
+25%         224.649501
+50%         267.464193
+75%         312.224964
+max         837.595909
+Name: prices, dtype: float64
+
+Nonstop share of products: 0.153
