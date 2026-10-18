@@ -1,0 +1,6 @@
+constant             -2.825
+price ($100)          0.699
+nonstop               0.510
+distance (1000 mi)   -0.699
+
+Mean outside share: 0.579
