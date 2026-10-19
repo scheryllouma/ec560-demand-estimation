@@ -1,0 +1,26 @@
+Number of instruments built: 6
+
+Correlation of price with instruments:
+demand_instruments0   -0.021
+demand_instruments1   -0.288
+demand_instruments2   -0.030
+demand_instruments3   -0.336
+demand_instruments4   -0.209
+demand_instruments5   -0.357
+Name: prices, dtype: float64
+
+Carriers (products, LCC flag):
+          products  lcc
+firm_ids               
+AA           32216    0
+DL           29512    0
+UA           22432    0
+WN           11025    1
+AS            2934    0
+F9            2665    1
+NK            2182    1
+G4            1517    1
+B6            1482    1
+SY             315    1
+
+Saved data/clean/pyblp_input_2019_full.csv: 106280 rows, 16 columns
