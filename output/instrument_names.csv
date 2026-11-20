@@ -1,0 +1,10 @@
+column,meaning
+demand_instruments0,cost_own
+demand_instruments1,cost_rival
+demand_instruments2,cost_conn
+demand_instruments3,blp0
+demand_instruments4,blp1
+demand_instruments5,blp2
+demand_instruments6,blp3
+demand_instruments7,blp4
+demand_instruments8,blp5
